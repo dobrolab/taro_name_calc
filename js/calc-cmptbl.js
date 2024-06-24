@@ -1,9 +1,14 @@
 function calculateSum() {
 
 		// Получаем значение даты рождения
-		var birthdate = document.getElementById('birthdate').value;
-		var birthmonth = document.getElementById('birthmonth').value;
-		var birthyear = document.getElementById('birthyear').value;
+		var birthdate1 = document.getElementById('birthdate1').value;
+		var birthmonth1 = document.getElementById('birthmonth1').value;
+		var birthyear1 = document.getElementById('birthyear1').value;
+
+		// Получаем значение даты рождения
+		var birthdate2 = document.getElementById('birthdate2').value;
+		var birthmonth2 = document.getElementById('birthmonth2').value;
+		var birthyear2 = document.getElementById('birthyear2').value;
 
 		let pimg = [];
 		pimg[0] = '';
@@ -31,184 +36,297 @@ function calculateSum() {
 		pimg[22] =	'//res2.weblium.site/res/64cb8ed4c14740000f01a652/65ef35109bde45000f831471';
 
 
-		// =========== CHOOSEN
+		// =========== USER 1
 
 		// [1] [2] Получаем значения
-		result01 = parseInt(birthdate);
-		while ( result01 > 22 ) { result01 = result01 - 22 };
-		result02 = parseInt(birthmonth);
-		while ( result02 > 22 ) { result02 = result02 - 22 };
+		u1result01 = parseInt(birthdate1);
+		while ( u1result01 > 22 ) { u1result01 = u1result01 - 22 };
+		u1result02 = parseInt(birthmonth1);
+		while ( u1result02 > 22 ) { u1result02 = u1result02 - 22 };
 
 		// [3]
-		var yearsum = 0;
-		for (var i = 0; i < birthyear.length; i++) {
-			yearsum += parseInt(birthyear[i]);
+		var u1yearsum = 0;
+		for (var i = 0; i < birthyear1.length; i++) {
+			u1yearsum += parseInt(birthyear1[i]);
 		}
-		result03 = yearsum;
-		while ( result03 > 22 ) { result03 = result03 - 22 };
+		u1result03 = u1yearsum;
+		while ( u1result03 > 22 ) { u1result03 = u1result03 - 22 };
 
 		// [4]
-		result04 = result01 + result02
-		if ( result04 == 0 ) { result04 = 22 };
-		while ( result04 > 22 ) { result04 = result04 - 22 };
+		u1result04 = u1result01 + u1result02
+		if ( u1result04 == 0 ) { u1result04 = 22 };
+		while ( u1result04 > 22 ) { u1result04 = u1result04 - 22 };
 
 		// [5]
-		result05 = result02 + result03
-		if ( result05 > 22 ) { result05 = result05 - 22 };
-		if ( result05 == 0 ) { result05 = 22 };
-		while ( result05 > 22 ) { result05 = result05 - 22 };
+		u1result05 = u1result02 + u1result03
+		if ( u1result05 > 22 ) { u1result05 = u1result05 - 22 };
+		if ( u1result05 == 0 ) { u1result05 = 22 };
+		while ( u1result05 > 22 ) { u1result05 = u1result05 - 22 };
 
 		// [6]
-		result06 = result04 + result05
-		if ( result06 == 0 ) { result06 = 22 };
-		while ( result06 > 22 ) { result06 = result06 - 22 };
+		u1result06 = u1result04 + u1result05
+		if ( u1result06 == 0 ) { u1result06 = 22 };
+		while ( u1result06 > 22 ) { u1result06 = u1result06 - 22 };
 
 		// [7]
-		result07 = result01 + result05
-		if ( result07 == 0 ) { result07 = 22 };
-		while ( result07 > 22 ) { result07 = result07 - 22 };
+		u1result07 = u1result01 + u1result05
+		if ( u1result07 == 0 ) { u1result07 = 22 };
+		while ( u1result07 > 22 ) { u1result07 = u1result07 - 22 };
 
 		// [8]
-		result08 = result02 + result06
-		if ( result08 == 0 ) { result08 = 22 };
-		while ( result08 > 22 ) { result08 = result08 - 22 };
+		u1result08 = u1result02 + u1result06
+		if ( u1result08 == 0 ) { u1result08 = 22 };
+		while ( u1result08 > 22 ) { u1result08 = u1result08 - 22 };
 
 		// [9]
-		result09 = result07 + result08
-		if ( result09 == 0 ) { result09 = 22 };
-		while ( result09 > 22 ) { result09 = result09 - 22 };
+		u1result09 = u1result07 + u1result08
+		if ( u1result09 == 0 ) { u1result09 = 22 };
+		while ( u1result09 > 22 ) { u1result09 = u1result09 - 22 };
 
 		// [10]
-		result10 = result01 + result04 + result06
-		if ( result10 == 0 ) { result10 = 22 };
-		while ( result10 > 22 ) { result10 = result10 - 22 };
+		u1result10 = u1result01 + u1result04 + u1result06
+		if ( u1result10 == 0 ) { u1result10 = 22 };
+		while ( u1result10 > 22 ) { u1result10 = u1result10 - 22 };
 
 		// [11]
-		result11 = result03 + result05 + result06
-		if ( result11 == 0 ) { result11 = 22 };
-		while ( result11 > 22 ) { result11 = result11 - 22 };
+		u1result11 = u1result03 + u1result05 + u1result06
+		if ( u1result11 == 0 ) { u1result11 = 22 };
+		while ( u1result11 > 22 ) { u1result11 = u1result11 - 22 };
 
 		// [12]
-		result12 = result01 + result02 + result03 + result04 + result05 + result06
-		if ( result12 == 0 ) { result12 = 22 };
-		while ( result12 > 22 ) { result12 = result12 - 22 };
+		u1result12 = u1result01 + u1result02 + u1result03 + u1result04 + u1result05 + u1result06
+		if ( u1result12 == 0 ) { u1result12 = 22 };
+		while ( u1result12 > 22 ) { u1result12 = u1result12 - 22 };
 
-
-		// ========== KARMA
-
-		// [13]
-		result13 = result01 - result02
-		if ( result13 < 0 ) { result13 = result13 - result13 - result13 };
-		if ( result13 == 0 ) { result13 = 22 };
-		while ( result13 > 22 ) { result13 = result13 - 22 };
-
-		// [14]
-		result14 = result02 - result03
-		if ( result14 < 0 ) { result14 = result14 - result14 - result14 };
-		if ( result14 == 0 ) { result14 = 22 };
-		while ( result14 > 22 ) { result14 = result14 - 22 };
-
-		// [15]
-		result15 = result13 - result14
-		if ( result15 < 0 ) { result15 = result15 - result15 - result15 };
-		if ( result15 == 0 ) { result15 = 22 };
-		while ( result15 > 22 ) { result15 = result15 - 22 };
-
-		// [16]
-		result16 = ( result13 + result14 + result15 ) - result07
-		if ( result16 < 0 ) { result16 = result16 - result16 - result16 };
-		if ( result16 == 0 ) { result16 = 22 };
-		while ( result16 > 22 ) { result16 = result16 - 22 };
-
-		// [17]
-		result17 = result13 + result14 + result15
-		if ( result17 == 0 ) { result17 = 22 };
-		while ( result17 > 22 ) { result17 = result17 - 22 };
-
-		// [18]
-		result18 = result01 + result03 + result04 + result05
-		//if ( result13 > 22 ) { result13 = result12 - 22 };
-		if ( result18 == 0 ) { result18 = 22 };
-		while ( result18 > 22 ) { result18 = result18 - 22 };
-
-		// [19]
-		result19 = result15 + result06
-		if ( result19 < 0 ) { result19 = result19 - result19 - result19 };
-		if ( result19 == 0 ) { result19 = 22 };
-		while ( result19 > 22 ) { result19 = result19 - 22 };
-
-		// [20]
-		result20 = result15 + result08
-		if ( result20 < 0 ) { result20 = result20 - result20 - result20 };
-		if ( result20 == 0 ) { result20 = 22 };
-		while ( result20 > 22 ) { result20 = result20 - 22 };
-
-		// [21]
-		result21 = result01 + 10
-		//if ( result13 > 22 ) { result13 = result12 - 22 };
-		while ( result21 > 22 ) { result21 = result21 - 22 };
-
-		// [22]
-		result22 = result02 + 10
-		//if ( result13 > 22 ) { result13 = result12 - 22 };
-		while ( result22 > 22 ) { result22 = result22 - 22 };
-
-		// [23]
-		result23 = result05 + 10
-		//if ( result13 > 22 ) { result13 = result12 - 22 };
-		while ( result23 > 22 ) { result23 = result23 - 22 };
-
-		// [24]
-		result24 = result06 + 10
-		//if ( result13 > 22 ) { result13 = result12 - 22 };
-		while ( result24 > 22 ) { result24 = result24 - 22 };
 
 		// Выводим результат на экран
-		document.getElementById('rr01').textContent = convertToRoman(result01);
-			document.getElementById('rs01').textContent = convertToSub(result01);
-			document.getElementById('ri01').src = pimg[result01];
-		document.getElementById('rr02').textContent = convertToRoman(result02);
-			document.getElementById('rs02').textContent = convertToSub(result02);
-			document.getElementById('ri02').src = pimg[result02];
-		document.getElementById('rr03').textContent = convertToRoman(result03);
-			document.getElementById('rs03').textContent = convertToSub(result03);
-			document.getElementById('ri03').src = pimg[result03];
-		document.getElementById('rr04').textContent = convertToRoman(result04);
-			document.getElementById('rs04').textContent = convertToSub(result04);
-			document.getElementById('ri04').src = pimg[result04];
-		document.getElementById('rr05').textContent = convertToRoman(result05);
-			document.getElementById('rs05').textContent = convertToSub(result05);
-			document.getElementById('ri05').src = pimg[result05];
-		document.getElementById('rr06').textContent = convertToRoman(result06);
-			document.getElementById('rs06').textContent = convertToSub(result06);
-			document.getElementById('ri06').src = pimg[result06];
-		document.getElementById('rr07').textContent = convertToRoman(result07);
-			document.getElementById('rs07').textContent = convertToSub(result07);
-			document.getElementById('ri07').src = pimg[result07];
-		document.getElementById('rr08').textContent = convertToRoman(result08);
-			document.getElementById('rs08').textContent = convertToSub(result08);
-			document.getElementById('ri08').src = pimg[result08];
-		document.getElementById('rr09').textContent = convertToRoman(result09);
-			document.getElementById('rs09').textContent = convertToSub(result09);
-			document.getElementById('ri09').src = pimg[result09];
-		document.getElementById('rr10').textContent = convertToRoman(result10);
-			document.getElementById('rs10').textContent = convertToSub(result10);
-			document.getElementById('ri10').src = pimg[result10];
-		document.getElementById('rr11').textContent = convertToRoman(result11);
-			document.getElementById('rs11').textContent = convertToSub(result11);
-			document.getElementById('ri11').src = pimg[result11];
-		document.getElementById('rr12').textContent = convertToRoman(result12);
-			document.getElementById('rs12').textContent = convertToSub(result12);
-			document.getElementById('ri12').src = pimg[result12];
-		document.getElementById('rr13').textContent = convertToRoman(result13);
-			document.getElementById('rs13').textContent = convertToSub(result13);
-			document.getElementById('ri13').src = pimg[result13];
-		document.getElementById('rr14').textContent = convertToRoman(result14);
-			document.getElementById('rs14').textContent = convertToSub(result14);
-			document.getElementById('ri14').src = pimg[result14];
-		document.getElementById('rr15').textContent = convertToRoman(result15);
-			document.getElementById('rs15').textContent = convertToSub(result15);
-			document.getElementById('ri15').src = pimg[result15];
+		document.getElementById('u1rr01').textContent = convertToRoman(u1result01);
+			document.getElementById('u1rs01').textContent = convertToSub(u1result01);
+			document.getElementById('u1ri01').src = pimg[u1result01];
+		document.getElementById('u1rr02').textContent = convertToRoman(u1result02);
+			document.getElementById('u1rs02').textContent = convertToSub(u1result02);
+			document.getElementById('u1ri02').src = pimg[u1result02];
+		document.getElementById('u1rr03').textContent = convertToRoman(u1result03);
+			document.getElementById('u1rs03').textContent = convertToSub(u1result03);
+			document.getElementById('u1ri03').src = pimg[u1result03];
+		document.getElementById('u1rr04').textContent = convertToRoman(u1result04);
+			document.getElementById('u1rs04').textContent = convertToSub(u1result04);
+			document.getElementById('u1ri04').src = pimg[u1result04];
+		document.getElementById('u1rr05').textContent = convertToRoman(u1result05);
+			document.getElementById('u1rs05').textContent = convertToSub(u1result05);
+			document.getElementById('u1ri05').src = pimg[u1result05];
+		document.getElementById('u1rr06').textContent = convertToRoman(u1result06);
+			document.getElementById('u1rs06').textContent = convertToSub(u1result06);
+			document.getElementById('u1ri06').src = pimg[u1result06];
+		document.getElementById('u1rr07').textContent = convertToRoman(u1result07);
+			document.getElementById('u1rs07').textContent = convertToSub(u1result07);
+			document.getElementById('u1ri07').src = pimg[u1result07];
+		document.getElementById('u1rr08').textContent = convertToRoman(u1result08);
+			document.getElementById('u1rs08').textContent = convertToSub(u1result08);
+			document.getElementById('u1ri08').src = pimg[u1result08];
+		document.getElementById('u1rr09').textContent = convertToRoman(u1result09);
+			document.getElementById('u1rs09').textContent = convertToSub(u1result09);
+			document.getElementById('u1ri09').src = pimg[u1result09];
+		document.getElementById('u1rr10').textContent = convertToRoman(u1result10);
+			document.getElementById('u1rs10').textContent = convertToSub(u1result10);
+			document.getElementById('u1ri10').src = pimg[u1result10];
+		document.getElementById('u1rr11').textContent = convertToRoman(u1result11);
+			document.getElementById('u1rs11').textContent = convertToSub(u1result11);
+			document.getElementById('u1ri11').src = pimg[u1result11];
+		document.getElementById('u1rr12').textContent = convertToRoman(u1result12);
+			document.getElementById('u1rs12').textContent = convertToSub(u1result12);
+			document.getElementById('u1ri12').src = pimg[u1result12];
+
+		// =========== USER 2
+
+		// [1] [2] Получаем значения
+		u2result01 = parseInt(birthdate2);
+		while ( u2result01 > 22 ) { u2result01 = u2result01 - 22 };
+		u2result02 = parseInt(birthmonth2);
+		while ( u2result02 > 22 ) { u2result02 = u2result02 - 22 };
+
+		// [3]
+		var u2yearsum = 0;
+		for (var i = 0; i < birthyear2.length; i++) {
+			u2yearsum += parseInt(birthyear2[i]);
+		}
+		u2result03 = u2yearsum;
+		while ( u2result03 > 22 ) { u2result03 = u2result03 - 22 };
+
+		// [4]
+		u2result04 = u2result01 + u2result02
+		if ( u2result04 == 0 ) { u2result04 = 22 };
+		while ( u2result04 > 22 ) { u2result04 = u2result04 - 22 };
+
+		// [5]
+		u2result05 = u2result02 + u2result03
+		if ( u2result05 > 22 ) { u2result05 = u2result05 - 22 };
+		if ( u2result05 == 0 ) { u2result05 = 22 };
+		while ( u2result05 > 22 ) { u2result05 = u2result05 - 22 };
+
+		// [6]
+		u2result06 = u2result04 + u2result05
+		if ( u2result06 == 0 ) { u2result06 = 22 };
+		while ( u2result06 > 22 ) { u2result06 = u2result06 - 22 };
+
+		// [7]
+		u2result07 = u2result01 + u2result05
+		if ( u2result07 == 0 ) { u2result07 = 22 };
+		while ( u2result07 > 22 ) { u2result07 = u2result07 - 22 };
+
+		// [8]
+		u2result08 = u2result02 + u2result06
+		if ( u2result08 == 0 ) { u2result08 = 22 };
+		while ( u2result08 > 22 ) { u2result08 = u2result08 - 22 };
+
+		// [9]
+		u2result09 = u2result07 + u2result08
+		if ( u2result09 == 0 ) { u2result09 = 22 };
+		while ( u2result09 > 22 ) { u2result09 = u2result09 - 22 };
+
+		// [10]
+		u2result10 = u2result01 + u2result04 + u2result06
+		if ( u2result10 == 0 ) { u2result10 = 22 };
+		while ( u2result10 > 22 ) { u2result10 = u2result10 - 22 };
+
+		// [11]
+		u2result11 = u2result03 + u2result05 + u2result06
+		if ( u2result11 == 0 ) { u2result11 = 22 };
+		while ( u2result11 > 22 ) { u2result11 = u2result11 - 22 };
+
+		// [12]
+		u2result12 = u2result01 + u2result02 + u2result03 + u2result04 + u2result05 + u2result06
+		if ( u2result12 == 0 ) { u2result12 = 22 };
+		while ( u2result12 > 22 ) { u2result12 = u2result12 - 22 };
+
+
+		// Выводим результат на экран
+		document.getElementById('u2rr01').textContent = convertToRoman(u2result01);
+			document.getElementById('u2rs01').textContent = convertToSub(u2result01);
+			document.getElementById('u2ri01').src = pimg[u2result01];
+		document.getElementById('u2rr02').textContent = convertToRoman(u2result02);
+			document.getElementById('u2rs02').textContent = convertToSub(u2result02);
+			document.getElementById('u2ri02').src = pimg[u2result02];
+		document.getElementById('u2rr03').textContent = convertToRoman(u2result03);
+			document.getElementById('u2rs03').textContent = convertToSub(u2result03);
+			document.getElementById('u2ri03').src = pimg[u2result03];
+		document.getElementById('u2rr04').textContent = convertToRoman(u2result04);
+			document.getElementById('u2rs04').textContent = convertToSub(u2result04);
+			document.getElementById('u2ri04').src = pimg[u2result04];
+		document.getElementById('u2rr05').textContent = convertToRoman(u2result05);
+			document.getElementById('u2rs05').textContent = convertToSub(u2result05);
+			document.getElementById('u2ri05').src = pimg[u2result05];
+		document.getElementById('u2rr06').textContent = convertToRoman(u2result06);
+			document.getElementById('u2rs06').textContent = convertToSub(u2result06);
+			document.getElementById('u2ri06').src = pimg[u2result06];
+		document.getElementById('u2rr07').textContent = convertToRoman(u2result07);
+			document.getElementById('u2rs07').textContent = convertToSub(u2result07);
+			document.getElementById('u2ri07').src = pimg[u2result07];
+		document.getElementById('u2rr08').textContent = convertToRoman(u2result08);
+			document.getElementById('u2rs08').textContent = convertToSub(u2result08);
+			document.getElementById('u2ri08').src = pimg[u2result08];
+		document.getElementById('u2rr09').textContent = convertToRoman(u2result09);
+			document.getElementById('u2rs09').textContent = convertToSub(u2result09);
+			document.getElementById('u2ri09').src = pimg[u2result09];
+		document.getElementById('u2rr10').textContent = convertToRoman(u2result10);
+			document.getElementById('u2rs10').textContent = convertToSub(u2result10);
+			document.getElementById('u2ri10').src = pimg[u2result10];
+		document.getElementById('u2rr11').textContent = convertToRoman(u2result11);
+			document.getElementById('u2rs11').textContent = convertToSub(u2result11);
+			document.getElementById('u2ri11').src = pimg[u2result11];
+		document.getElementById('u2rr12').textContent = convertToRoman(u2result12);
+			document.getElementById('u2rs12').textContent = convertToSub(u2result12);
+			document.getElementById('u2ri12').src = pimg[u2result12];
+
+
+		// =========== USER 3
+
+		// [1] 
+		u3result01 = u1result01 + u2result01;
+		while ( u3result01 > 22 ) { u3result01 = u3result01 - 22 };
+
+		// [2] 
+		u3result02 = u1result02 + u2result02;
+		while ( u3result02 > 22 ) { u3result02 = u3result02 - 22 };
+
+		// [3]
+		u3result03 = u1result03 + u2result03;
+		while ( u3result03 > 22 ) { u3result03 = u3result03 - 22 };
+
+		// [4]
+		u3result04 = u1result04 + u2result04
+		while ( u3result04 > 22 ) { u3result04 = u3result04 - 22 };
+
+		// [5]
+		u3result05 = u1result05 + u2result05
+		while ( u3result05 > 22 ) { u3result05 = u3result05 - 22 };
+
+		// [6]
+		u3result06 = u1result06 + u2result06
+		while ( u3result06 > 22 ) { u3result06 = u3result06 - 22 };
+
+		// [7]
+		u3result07 = u1result07 + u2result07
+		while ( u3result07 > 22 ) { u3result07 = u3result07 - 22 };
+
+		// [8]
+		u3result08 = u1result08 + u2result08
+		while ( u3result08 > 22 ) { u3result08 = u3result08 - 22 };
+
+		// [9]
+		u3result09 = u1result09 + u2result09
+		while ( u3result09 > 22 ) { u3result09 = u3result09 - 22 };
+
+		// [10]
+		u3result10 = u1result10 + u2result10
+		while ( u3result10 > 22 ) { u3result10 = u3result10 - 22 };
+
+		// [11]
+		u3result11 = u1result11 + u2result11
+		while ( u3result11 > 22 ) { u3result11 = u3result11 - 22 };
+
+		// [12]
+		u3result12 = u1result12 + u2result12
+		while ( u3result12 > 22 ) { u3result12 = u3result12 - 22 };
+
+
+		// Выводим результат на экран
+		document.getElementById('u3rr01').textContent = convertToRoman(u3result01);
+			document.getElementById('u3rs01').textContent = convertToSub(u3result01);
+			document.getElementById('u3ri01').src = pimg[u3result01];
+		document.getElementById('u3rr02').textContent = convertToRoman(u3result02);
+			document.getElementById('u3rs02').textContent = convertToSub(u3result02);
+			document.getElementById('u3ri02').src = pimg[u3result02];
+		document.getElementById('u3rr03').textContent = convertToRoman(u3result03);
+			document.getElementById('u3rs03').textContent = convertToSub(u3result03);
+			document.getElementById('u3ri03').src = pimg[u3result03];
+		document.getElementById('u3rr04').textContent = convertToRoman(u3result04);
+			document.getElementById('u3rs04').textContent = convertToSub(u3result04);
+			document.getElementById('u3ri04').src = pimg[u3result04];
+		document.getElementById('u3rr05').textContent = convertToRoman(u3result05);
+			document.getElementById('u3rs05').textContent = convertToSub(u3result05);
+			document.getElementById('u3ri05').src = pimg[u3result05];
+		document.getElementById('u3rr06').textContent = convertToRoman(u3result06);
+			document.getElementById('u3rs06').textContent = convertToSub(u3result06);
+			document.getElementById('u3ri06').src = pimg[u3result06];
+		document.getElementById('u3rr07').textContent = convertToRoman(u3result07);
+			document.getElementById('u3rs07').textContent = convertToSub(u3result07);
+			document.getElementById('u3ri07').src = pimg[u3result07];
+		document.getElementById('u3rr08').textContent = convertToRoman(u3result08);
+			document.getElementById('u3rs08').textContent = convertToSub(u3result08);
+			document.getElementById('u3ri08').src = pimg[u3result08];
+		document.getElementById('u3rr09').textContent = convertToRoman(u3result09);
+			document.getElementById('u3rs09').textContent = convertToSub(u3result09);
+			document.getElementById('u3ri09').src = pimg[u3result09];
+		document.getElementById('u3rr10').textContent = convertToRoman(u3result10);
+			document.getElementById('u3rs10').textContent = convertToSub(u3result10);
+			document.getElementById('u3ri10').src = pimg[u3result10];
+		document.getElementById('u3rr11').textContent = convertToRoman(u3result11);
+			document.getElementById('u3rs11').textContent = convertToSub(u3result11);
+			document.getElementById('u3ri11').src = pimg[u3result11];
+		document.getElementById('u3rr12').textContent = convertToRoman(u3result12);
+			document.getElementById('u3rs12').textContent = convertToSub(u3result12);
+			document.getElementById('u3ri12').src = pimg[u3result12];
 
 
 
