@@ -37,10 +37,10 @@
 			<!-- input -->
 			<section id="dainput" class="my-0">
 
-				<div class="row g-4">
+				<div class="row g-4 mb-4">
 
-					<div class="col-lg-6">
-						<h5>Выберите дату рождения Персоны 1:</h5>
+					<div class="col-lg-6 mb-2">
+						<h6>Выберите дату рождения Персоны 1:</h6>
 						<div class="d-flex">
 							<div class="inputWrapper">
 									<label>День</label><br>
@@ -58,8 +58,8 @@
 
 					</div>
 
-					<div class="col-lg-6">
-						<h5>Выберите дату рождения Персоны 2:</h5>
+					<div class="col-lg-6 mb-2">
+						<h6>Выберите дату рождения Персоны 2:</h6>
 						<div class="d-flex">
 							<div class="inputWrapper">
 									<label>День</label><br>
@@ -79,7 +79,7 @@
 					</div>
 
 					<div class="col-lg-6 text-center offset-lg-3">
-						<button class="calculate mt-5" onclick="calculateSum()">Рассчитать совместимость
+						<button class="calculate " onclick="calculateSum()">Рассчитать совместимость
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.47998 20.3137L14.9325 11.9999L6.47998 3.68606L7.78534 2.3999L17.52 12.0047L7.78534 21.5999L6.47998 20.3137Z" fill="black"/> </svg>
 						</button>
 					</div>
@@ -97,9 +97,11 @@
 					<div class="row">
 
 						<!-- USER 1 -->
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-5">
 							<div class="mscale">
 								<div class="astar">
+
+									<h2>Персона 1</h2>
 
 									<img src="img/level_01.svg" alt="">
 
@@ -193,11 +195,13 @@
 						</div>
 
 						<!-- USER 2 -->
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-5">
 							<div class="mscale">
 								<div class="astar">
 
-									<img src="img/level_01.svg" alt="">
+									<h2>Персона 2</h2>
+
+									<img src="img/level_02.svg" alt="">
 
 									<div class="tcard" id="r01">
 										<div class="ordernumber">1</div>
@@ -288,6 +292,9 @@
 						</div>
 
 					</div>
+
+					<div class="results"></div>
+
 					<div class="row">
 
 						<!-- COMPATABILITY -->
@@ -295,7 +302,9 @@
 							<div class="mscale">
 								<div class="astar">
 
-									<img src="img/level_01.svg" alt="">
+								<h2>Результат</h2>
+
+									<img src="img/level_03.svg" alt="">
 
 									<div class="tcard" id="r01">
 										<div class="ordernumber">1</div>
@@ -353,21 +362,21 @@
 										<div class="rstring" id="u3rs08">—</div>
 									</div>
 
-									<div class="tcard" id="r09">
+									<div class="tcard d-none" id="r09">
 										<div class="ordernumber">9</div>
 										<div class="romulus" id="u3rr09">—</div>
 										<div><img id="u3ri09" src="img/card.jpg" class="cimg"></div>
 										<div class="rstring" id="u3rs09">—</div>
 									</div>
 
-									<div class="tcard" id="r10">
+									<div class="tcard d-none" id="r10">
 										<div class="ordernumber">10</div>
 										<div class="romulus" id="u3rr10">—</div>
 										<div><img id="u3ri10" src="img/card.jpg" class="cimg"></div>
 										<div class="rstring" id="u3rs10">—</div>
 									</div>
 
-									<div class="tcard" id="r11">
+									<div class="tcard d-none" id="r11">
 										<div class="ordernumber">11</div>
 										<div class="romulus" id="u3rr11">—</div>
 										<div><img id="u3ri11" src="img/card.jpg" class="cimg"></div>

@@ -60,6 +60,11 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+#dainput h6 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #C7AB77;
+}
 #dainput p {
   margin-bottom: 20px;
 }
@@ -221,7 +226,14 @@ section {
   margin: -50%;
 }
 
+.results {
+  margin-top: 300px;
+}
+
 @media (max-width: 767px) {
+  #dainput {
+    padding-bottom: 0;
+  }
   #dainput select, #dainput input {
     font-size: 16px;
   }
@@ -238,5 +250,8 @@ section {
     top: 0;
     left: 0;
     margin: -50%;
+  }
+  .results {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */
