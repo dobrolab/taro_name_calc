@@ -44,6 +44,9 @@ header .h3 a {
   text-transform: uppercase;
 }
 
+main {
+  background: transparent url("../img/name_calc_bg.svg") no-repeat scroll right top/contain;
+}
 main h1 {
   margin-top: 60px;
 }
@@ -96,6 +99,39 @@ section {
 #dainput .calculate:hover {
   background: rgb(199, 171, 119);
   cursor: pointer;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent;
+  color: #C7AB77;
+  border-color: #C7AB77;
+}
+
+.table-fixed {
+  width: 100%;
+  table-layout: fixed;
+}
+.table-fixed .strong td {
+  font-weight: bold;
+}
+.table-fixed .text-white td {
+  color: #fff;
+  font-size: 80%;
+}
+
+.result {
+  color: #C7AB77;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.intersection {
+  padding: 5px;
+  font-family: "Manrope", sans-serif;
+  color: #C7AB77;
+  font-size: 33px;
 }
 
 .astar {
@@ -153,77 +189,6 @@ section {
   width: 38px;
   height: 65px;
   border-radius: 2px;
-}
-.tcard#r01 {
-  left: 175px;
-  top: 260px;
-}
-.tcard#r02 {
-  left: 330px;
-  top: 175px;
-}
-.tcard#r03 {
-  left: 485px;
-  top: 260px;
-}
-.tcard#r04 {
-  left: 175px;
-  top: 420px;
-}
-.tcard#r05 {
-  left: 330px;
-  top: 515px;
-}
-.tcard#r06 {
-  left: 485px;
-  top: 420px;
-}
-.tcard#r07 {
-  left: 15px;
-  top: 510px;
-}
-.tcard#r08 {
-  left: 625px;
-  top: 510px;
-}
-.tcard#r09 {
-  left: 330px;
-  top: 670px;
-}
-.tcard#r10 {
-  left: 15px;
-  top: 145px;
-}
-.tcard#r11 {
-  left: 625px;
-  top: 145px;
-}
-.tcard#r12 {
-  left: 330px;
-  top: 15px;
-}
-.tcard#r13 {
-  left: 250px;
-  top: 210px;
-}
-.tcard#r14 {
-  left: 410px;
-  top: 210px;
-}
-.tcard#r15 {
-  left: 330px;
-  top: 340px;
-}
-
-.mscale {
-  width: 350px;
-  height: 400px;
-}
-.mscale .astar {
-  transform: scale(0.7);
-  top: 0;
-  left: 0;
-  margin: -50%;
 }
 
 .results {

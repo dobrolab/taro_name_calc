@@ -43,8 +43,12 @@ header
 		text-transform: uppercase
 
 main
+	background: transparent url('../img/name_calc_bg.svg') no-repeat scroll right top / contain
 	h1
 		margin-top: 60px
+
+#alphabets
+	//
 
 section
 	margin-top: 60px
@@ -89,6 +93,35 @@ section
 			background: rgb(199, 171, 119)
 			cursor: pointer
 
+.table
+	& > :not(caption) > * > *
+		background-color: transparent
+		color: $c1
+		border-color: $c1
+
+.table-fixed
+	width: 100%
+	table-layout: fixed
+
+	.strong td
+		font-weight: bold
+	.text-white td
+		color: #fff
+		font-size: 80%
+
+.result
+	color: $c1
+	padding: 5px
+	
+	display: flex
+	flex-wrap: wrap
+	gap: 5px
+
+.intersection
+	padding: 5px
+	font-family: "Manrope", sans-serif
+	color: $c1
+	font-size: 33px
 
 .astar
 	position: relative
@@ -143,76 +176,6 @@ section
 		width: 38px
 		height: 65px
 		border-radius: 2px
-
-	&#r01
-		left: 175px
-		top: 260px
-
-	&#r02
-		left: 330px
-		top: 175px
-
-	&#r03
-		left: 485px
-		top: 260px
-
-	&#r04
-		left: 175px
-		top: 420px
-
-	&#r05
-		left: 330px
-		top: 515px
-
-	&#r06
-		left: 485px
-		top: 420px
-
-	&#r07
-		left: 15px
-		top: 510px
-
-	&#r08
-		left: 625px
-		top: 510px
-
-	&#r09
-		left: 330px
-		top: 670px
-
-	&#r10
-		left: 15px
-		top: 145px
-
-	&#r11
-		left: 625px
-		top: 145px
-
-	&#r12
-		left: 330px
-		top: 15px
-
-	&#r13
-		left: 250px
-		top: 210px
-
-	&#r14
-		left: 410px
-		top: 210px
-
-	&#r15
-		left: 330px
-		top: 340px
-
-
-.mscale
-	width: 350px
-	height: 400px
-	.astar
-		transform: scale(.7)
-		top: 0
-		left: 0
-		margin: -50%
 
 .results
 	margin-top: 300px
