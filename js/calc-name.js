@@ -10,7 +10,7 @@ function parseinputs() {
 		var arrayukr = textukr.split('');
 
 		let pimg = [];
-		pimg[0]  = '';
+		pimg[0]  = '//dobrolab.github.io/tarocalc/img/card.jpg';
 		pimg[1]  =	'//res2.weblium.site/res/64cb8ed4c14740000f01a652/65ef35384cc126000e54a4d1';
 		pimg[2]  =	'//res2.weblium.site/res/64cb8ed4c14740000f01a652/65ef353567ba49000f1f6e93';
 		pimg[3]  =	'//res2.weblium.site/res/64cb8ed4c14740000f01a652/65ef35339bde45000f8315b4';
@@ -38,7 +38,8 @@ function parseinputs() {
 	// ENG
 		// цикл находим соответствия
 		var resulteng = [];
-		for (var ieng = 0; ieng < (arrayeng.length + 1); ieng++) {
+		for (var ieng = 0; ieng < (arrayeng.length); ieng++) {
+			resulteng[ieng] = 0;
 			if (arrayeng[ieng] == "A") { resulteng[ieng] = 22; }
 			if (arrayeng[ieng] == "B") { resulteng[ieng] = 1; }
 			if (arrayeng[ieng] == "C") { resulteng[ieng] = 2; }
@@ -71,6 +72,7 @@ function parseinputs() {
 		resultengRoman = [];
 		resultengHTML = [];
 		for (var jeng = 0; jeng < (resulteng.length); jeng++) {
+			if (arrayeng[jeng] == ' ') {arrayeng[jeng] = '&nbsp;'};
 			resultengRoman[jeng] = convertToRoman(resulteng[jeng]);
 			resultengHTML[jeng] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jeng+1)+'</div><div class="romulus" id="rr01">'+arrayeng[jeng]+'</div><div><img id="ri01" src="'+pimg[resulteng[jeng]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultengRoman[jeng]+'</div></div>';
 		};
@@ -88,7 +90,8 @@ function parseinputs() {
 	// RUS
 		// цикл находим соответствия
 		var resultrus = [];
-		for (var irus = 0; irus < (arrayrus.length + 1); irus++) {
+		for (var irus = 0; irus < (arrayrus.length); irus++) {
+			resultrus[irus] = 0;
 			if (arrayrus[irus] == "А") { resultrus[irus] = 22; }
 			if (arrayrus[irus] == "Б") { resultrus[irus] = 1; }
 			if (arrayrus[irus] == "В") { resultrus[irus] = 2; }
@@ -128,6 +131,7 @@ function parseinputs() {
 		resultrusRoman = [];
 		resultrusHTML = [];
 		for (var jrus = 0; jrus < (resultrus.length); jrus++) {
+			if (arrayrus[jrus] == ' ') {arrayrus[jrus] = '&nbsp;'};
 			resultrusRoman[jrus] = convertToRoman(resultrus[jrus]);
 			resultrusHTML[jrus] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jrus+1)+'</div><div class="romulus" id="rr01">'+arrayrus[jrus]+'</div><div><img id="ri01" src="'+pimg[resultrus[jrus]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultrusRoman[jrus]+'</div></div>';
 		};
@@ -145,7 +149,8 @@ function parseinputs() {
 	// UKR
 		// цикл находим соответствия
 		var resultukr = [];
-		for (var iukr = 0; iukr < (arrayukr.length + 1); iukr++) {
+		for (var iukr = 0; iukr < (arrayukr.length); iukr++) {
+			resultukr[iukr] = 0;
 			if (arrayukr[iukr] == "А") { resultukr[iukr] = 22; }
 			if (arrayukr[iukr] == "Б") { resultukr[iukr] = 1; }
 			if (arrayukr[iukr] == "В") { resultukr[iukr] = 2; }
@@ -185,6 +190,7 @@ function parseinputs() {
 		resultukrRoman = [];
 		resultukrHTML = [];
 		for (var jukr = 0; jukr < (resultukr.length); jukr++) {
+			if (arrayukr[jukr] == ' ') {arrayukr[jukr] = '&nbsp;'};
 			resultukrRoman[jukr] = convertToRoman(resultukr[jukr]);
 			resultukrHTML[jukr] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jukr+1)+'</div><div class="romulus" id="rr01">'+arrayukr[jukr]+'</div><div><img id="ri01" src="'+pimg[resultukr[jukr]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultukrRoman[jukr]+'</div></div>';
 		};
