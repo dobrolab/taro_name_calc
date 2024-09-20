@@ -70,7 +70,6 @@ function parseinputs() {
 
 		// Считаем сумму арканов букв
 		const ressumeng = resulteng.reduce((x, y) => x + y);
-		while ( ressumeng > 22 ) { ressumeng = ressumeng - 22 };
 		document.getElementById('ressumeng').innerHTML = ressumeng;
 
 		// проходимся циклом по результатам
@@ -134,7 +133,6 @@ function parseinputs() {
 
 		// Считаем сумму арканов букв
 		const ressumrus = resultrus.reduce((x, y) => x + y);
-		while ( ressumrus > 22 ) { ressumrus = ressumrus - 22 };
 		document.getElementById('ressumrus').innerHTML = ressumrus;
 
 		// проходимся циклом по результатам
@@ -198,7 +196,6 @@ function parseinputs() {
 
 		// Считаем сумму арканов букв
 		const ressumukr = resultukr.reduce((x, y) => x + y);
-		while ( ressumukr > 22 ) { ressumukr = ressumukr - 22 };
 		document.getElementById('ressumukr').innerHTML = ressumukr;
 
 		// проходимся циклом по результатам
