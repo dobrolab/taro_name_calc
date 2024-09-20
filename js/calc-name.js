@@ -1,13 +1,21 @@
 function parseinputs() {
 
 		// получаем значения, убираем пробелы, превращаем в заглавные
-		var texteng = document.getElementById('texteng').value.trim().toUpperCase();
-		var textrus = document.getElementById('textrus').value.trim().toUpperCase();
-		var textukr = document.getElementById('textukr').value.trim().toUpperCase();
+		var texteng = '—';
+		var textrus = '—';
+		var textukr = '—';
+		
+		texteng = document.getElementById('texteng').value.trim().toUpperCase();
+		textrus = document.getElementById('textrus').value.trim().toUpperCase();
+		textukr = document.getElementById('textukr').value.trim().toUpperCase();
 
-		var arrayeng = texteng.split('');
-		var arrayrus = textrus.split('');
-		var arrayukr = textukr.split('');
+		// var arrayeng = texteng.split('');
+		// var arrayrus = textrus.split('');
+		// var arrayukr = textukr.split('');
+
+		var arrayeng = texteng.trim() === "" ? "-" : texteng.split('');
+		var arrayrus = textrus.trim() === "" ? "-" : textrus.split('');
+		var arrayukr = textukr.trim() === "" ? "-" : textukr.split('');
 
 		let pimg = [];
 		pimg[0]  = '//dobrolab.github.io/tarocalc/img/card.jpg';
