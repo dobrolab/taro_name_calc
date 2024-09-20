@@ -68,6 +68,10 @@ function parseinputs() {
 			if (arrayeng[ieng] == "Z") { resulteng[ieng] = 21; }
 		};
 
+		// Считаем сумму арканов букв
+		const ressumeng = resulteng.reduce((x, y) => x + y);
+		document.getElementById('ressumeng').innerHTML = ressumeng;
+
 		// проходимся циклом по результатам
 		resultengRoman = [];
 		resultengHTML = [];
@@ -127,6 +131,10 @@ function parseinputs() {
 			if (arrayrus[irus] == "Я") { resultrus[irus] = 21; }
 		};
 
+		// Считаем сумму арканов букв
+		const ressumrus = resultrus.reduce((x, y) => x + y);
+		document.getElementById('ressumrus').innerHTML = ressumrus;
+
 		// проходимся циклом по результатам
 		resultrusRoman = [];
 		resultrusHTML = [];
@@ -185,6 +193,10 @@ function parseinputs() {
 			if (arrayukr[iukr] == "Ю") { resultukr[iukr] = 21; }
 			if (arrayukr[iukr] == "Я") { resultukr[iukr] = 21; }
 		};
+
+		// Считаем сумму арканов букв
+		const ressumukr = resultukr.reduce((x, y) => x + y);
+		document.getElementById('ressumukr').innerHTML = ressumukr;
 
 		// проходимся циклом по результатам
 		resultukrRoman = [];

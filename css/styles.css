@@ -144,6 +144,11 @@ section {
   position: absolute;
 }
 
+#ressumeng, #ressumrus, #ressumukr {
+  color: #C7AB77;
+  font-weight: 700;
+}
+
 .tcard {
   transition: all 0.1s ease;
   border: 1px solid #C7AB77;
