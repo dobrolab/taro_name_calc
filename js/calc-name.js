@@ -109,34 +109,34 @@ function parseinputs() {
 			if (arrayrus[irus] == "Б") { resultrus[irus] = 1; }
 			if (arrayrus[irus] == "В") { resultrus[irus] = 2; }
 			if (arrayrus[irus] == "Г") { resultrus[irus] = 3; }
-			if (arrayrus[irus] == "Ч") { resultrus[irus] = 4; }
-			if (arrayrus[irus] == "Д") { resultrus[irus] = 5; }
-			if (arrayrus[irus] == "Е") { resultrus[irus] = 6; }
-			if (arrayrus[irus] == "Ё") { resultrus[irus] = 7; }
-			if (arrayrus[irus] == "Э") { resultrus[irus] = 8; }
-			if (arrayrus[irus] == "Ж") { resultrus[irus] = 9; }
-			if (arrayrus[irus] == "З") { resultrus[irus] = 10; }
-			if (arrayrus[irus] == "И") { resultrus[irus] = 11; }
-			if (arrayrus[irus] == "Й") { resultrus[irus] = 12; }
-			if (arrayrus[irus] == "К") { resultrus[irus] = 13; }
-			if (arrayrus[irus] == "Л") { resultrus[irus] = 14; }
-			if (arrayrus[irus] == "М") { resultrus[irus] = 14; }
-			if (arrayrus[irus] == "Н") { resultrus[irus] = 14; }
-			if (arrayrus[irus] == "О") { resultrus[irus] = 15; }
-			if (arrayrus[irus] == "П") { resultrus[irus] = 16; }
-			if (arrayrus[irus] == "Р") { resultrus[irus] = 17; }
-			if (arrayrus[irus] == "С") { resultrus[irus] = 18; }
-			if (arrayrus[irus] == "Ц") { resultrus[irus] = 19; }
-			if (arrayrus[irus] == "Т") { resultrus[irus] = 19; }
-			if (arrayrus[irus] == "У") { resultrus[irus] = 20; }
-			if (arrayrus[irus] == "Ф") { resultrus[irus] = 20; }
-			if (arrayrus[irus] == "Х") { resultrus[irus] = 21; }
-			if (arrayrus[irus] == "Ш") { resultrus[irus] = 17; }
-			if (arrayrus[irus] == "Щ") { resultrus[irus] = 18; }
-			if (arrayrus[irus] == "Ъ") { resultrus[irus] = 19; }
-			if (arrayrus[irus] == "Ы") { resultrus[irus] = 19; }
+			if (arrayrus[irus] == "Ч") { resultrus[irus] = 3; }
+			if (arrayrus[irus] == "Д") { resultrus[irus] = 4; }
+			if (arrayrus[irus] == "Е") { resultrus[irus] = 5; }
+			if (arrayrus[irus] == "Ё") { resultrus[irus] = 5; }
+			if (arrayrus[irus] == "Э") { resultrus[irus] = 5; }
+			if (arrayrus[irus] == "Ж") { resultrus[irus] = 6; }
+			if (arrayrus[irus] == "З") { resultrus[irus] = 6; }
+			if (arrayrus[irus] == "И") { resultrus[irus] = 7; }
+			if (arrayrus[irus] == "Й") { resultrus[irus] = 7; }
+			if (arrayrus[irus] == "К") { resultrus[irus] = 8; }
+			if (arrayrus[irus] == "Л") { resultrus[irus] = 9; }
+			if (arrayrus[irus] == "М") { resultrus[irus] = 10; }
+			if (arrayrus[irus] == "Н") { resultrus[irus] = 11; }
+			if (arrayrus[irus] == "О") { resultrus[irus] = 12; }
+			if (arrayrus[irus] == "П") { resultrus[irus] = 13; }
+			if (arrayrus[irus] == "Р") { resultrus[irus] = 14; }
+			if (arrayrus[irus] == "С") { resultrus[irus] = 15; }
+			if (arrayrus[irus] == "Ц") { resultrus[irus] = 15; }
+			if (arrayrus[irus] == "Т") { resultrus[irus] = 16; }
+			if (arrayrus[irus] == "У") { resultrus[irus] = 17; }
+			if (arrayrus[irus] == "Ф") { resultrus[irus] = 18; }
+			if (arrayrus[irus] == "Х") { resultrus[irus] = 18; }
+			if (arrayrus[irus] == "Ш") { resultrus[irus] = 19; }
+			if (arrayrus[irus] == "Щ") { resultrus[irus] = 19; }
+			if (arrayrus[irus] == "Ъ") { resultrus[irus] = 20; }
+			if (arrayrus[irus] == "Ы") { resultrus[irus] = 20; }
 			if (arrayrus[irus] == "Ь") { resultrus[irus] = 20; }
-			if (arrayrus[irus] == "Ю") { resultrus[irus] = 20; }
+			if (arrayrus[irus] == "Ю") { resultrus[irus] = 21; }
 			if (arrayrus[irus] == "Я") { resultrus[irus] = 21; }
 		};
 
