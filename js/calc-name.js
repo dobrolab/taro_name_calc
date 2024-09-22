@@ -76,10 +76,12 @@ function parseinputs() {
 			if (arrayeng[ieng] == "Z") { resulteng[ieng] = 21; }
 		};
 
-		// Считаем сумму арканов букв
+		// Считаем сумму арканов букв &sum;
 		var ressumeng = resulteng.reduce((x, y) => x + y);
 		while ( ressumeng > 22 ) { ressumeng = ressumeng - 22 };
 		document.getElementById('ressumeng').innerHTML = ressumeng;
+
+		ressumengHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumeng]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumeng)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultengRoman = [];
@@ -93,12 +95,13 @@ function parseinputs() {
 		// Преобразуем массив в строку
 		//const result_eng_text = resulteng.join(' ');
 		const result_eng_text = resultengRoman.join('— ');
-		const result_eng_html = resultengHTML.join(' ');
+		const result_eng_html = resultengHTML.join(' ') + '=' + ressumengHTML;
 
 		// Находим элемент с id="result1" и записываем в него строку
 		//document.getElementById('result1').innerHTML = arrayAsString;
 		document.getElementById('result_eng').textContent = result_eng_text;
 		document.getElementById('result_eng').innerHTML = result_eng_html;
+
 
 	// RUS
 		// цикл находим соответствия
@@ -145,6 +148,8 @@ function parseinputs() {
 		while ( ressumrus > 22 ) { ressumrus = ressumrus - 22 };
 		document.getElementById('ressumrus').innerHTML = ressumrus;
 
+		ressumrusHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumrus]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumrus)+'</div></div>';
+
 		// проходимся циклом по результатам
 		resultrusRoman = [];
 		resultrusHTML = [];
@@ -156,7 +161,7 @@ function parseinputs() {
 
 		// Преобразуем массив в строку
 		const result_rus_text = resultrusRoman.join(' ');
-		const result_rus_html = resultrusHTML.join(' ');
+		const result_rus_html = resultrusHTML.join(' ') + '=' + ressumrusHTML;
 
 		// Находим элемент с id="result1" и записываем в него строку
 		//document.getElementById('result1').innerHTML = arrayAsString;
@@ -209,6 +214,8 @@ function parseinputs() {
 		while ( ressumukr > 22 ) { ressumukr = ressumukr - 22 };
 		document.getElementById('ressumukr').innerHTML = ressumukr;
 
+		ressumukrHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumukr]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumukr)+'</div></div>';
+
 		// проходимся циклом по результатам
 		resultukrRoman = [];
 		resultukrHTML = [];
@@ -220,7 +227,7 @@ function parseinputs() {
 
 		// Преобразуем массив в строку
 		const result_ukr_text = resultukrRoman.join(' ');
-		const result_ukr_html = resultukrHTML.join(' ');
+		const result_ukr_html = resultukrHTML.join(' ') + '=' + ressumukrHTML;
 
 		// Находим элемент с id="result1" и записываем в него строку
 		//document.getElementById('result1').innerHTML = arrayAsString;

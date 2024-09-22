@@ -123,8 +123,9 @@ section {
   color: #C7AB77;
   padding: 5px;
   display: flex;
-  flex-wrap: wrap;
   gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .intersection {
