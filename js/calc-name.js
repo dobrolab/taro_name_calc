@@ -81,7 +81,7 @@ function parseinputs() {
 		while ( ressumeng > 22 ) { ressumeng = ressumeng - 22 };
 		document.getElementById('ressumeng').innerHTML = ressumeng;
 
-		ressumengHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumeng]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumeng)+'</div></div>';
+		ressumengHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumeng]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumeng)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultengRoman = [];
@@ -89,7 +89,7 @@ function parseinputs() {
 		for (var jeng = 0; jeng < (resulteng.length); jeng++) {
 			if (arrayeng[jeng] == ' ') {arrayeng[jeng] = '&nbsp;'};
 			resultengRoman[jeng] = convertToRoman(resulteng[jeng]);
-			resultengHTML[jeng] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jeng+1)+'</div><div class="romulus" id="rr01">'+arrayeng[jeng]+'</div><div><img id="ri01" src="'+pimg[resulteng[jeng]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultengRoman[jeng]+'</div></div>';
+			resultengHTML[jeng] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jeng+1)+'</div><div class="romulus" id="rr01">'+arrayeng[jeng]+'</div><div><img id="ri01" src="'+pimg[resulteng[jeng]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultengRoman[jeng]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку
@@ -148,7 +148,7 @@ function parseinputs() {
 		while ( ressumrus > 22 ) { ressumrus = ressumrus - 22 };
 		document.getElementById('ressumrus').innerHTML = ressumrus;
 
-		ressumrusHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumrus]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumrus)+'</div></div>';
+		ressumrusHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumrus]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumrus)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultrusRoman = [];
@@ -156,7 +156,7 @@ function parseinputs() {
 		for (var jrus = 0; jrus < (resultrus.length); jrus++) {
 			if (arrayrus[jrus] == ' ') {arrayrus[jrus] = '&nbsp;'};
 			resultrusRoman[jrus] = convertToRoman(resultrus[jrus]);
-			resultrusHTML[jrus] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jrus+1)+'</div><div class="romulus" id="rr01">'+arrayrus[jrus]+'</div><div><img id="ri01" src="'+pimg[resultrus[jrus]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultrusRoman[jrus]+'</div></div>';
+			resultrusHTML[jrus] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jrus+1)+'</div><div class="romulus" id="rr01">'+arrayrus[jrus]+'</div><div><img id="ri01" src="'+pimg[resultrus[jrus]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultrusRoman[jrus]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку
@@ -214,7 +214,7 @@ function parseinputs() {
 		while ( ressumukr > 22 ) { ressumukr = ressumukr - 22 };
 		document.getElementById('ressumukr').innerHTML = ressumukr;
 
-		ressumukrHTML = '<div class="tcard" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumukr]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumukr)+'</div></div>';
+		ressumukrHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumukr]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumukr)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultukrRoman = [];
@@ -222,7 +222,7 @@ function parseinputs() {
 		for (var jukr = 0; jukr < (resultukr.length); jukr++) {
 			if (arrayukr[jukr] == ' ') {arrayukr[jukr] = '&nbsp;'};
 			resultukrRoman[jukr] = convertToRoman(resultukr[jukr]);
-			resultukrHTML[jukr] = '<div class="tcard" id="r01"><div class="ordernumber">'+(jukr+1)+'</div><div class="romulus" id="rr01">'+arrayukr[jukr]+'</div><div><img id="ri01" src="'+pimg[resultukr[jukr]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultukrRoman[jukr]+'</div></div>';
+			resultukrHTML[jukr] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jukr+1)+'</div><div class="romulus" id="rr01">'+arrayukr[jukr]+'</div><div><img id="ri01" src="'+pimg[resultukr[jukr]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultukrRoman[jukr]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку

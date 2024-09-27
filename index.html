@@ -37,62 +37,73 @@
 			<!-- input -->
 			<section id="dainput" class="my-0">
 
-				<div class="row g-4 mb-4">
+				<div class="row g-4">
 
-					<div class="col-lg-3 mb-2">
+					<div class="col-lg-9 mb-3">
 						<h6>Введите наименование:</h6>
-						<div class="d-flex">
-							<div class="inputWrapper">
-								<label>in english</label><br>
-								<input class="form-input w-100" id="texteng" type="text" placeholder="eng" value=""><br>
-								<!-- <label>Имя</label> -->
+
+						<div class="row g-4">
+
+							<div class="col-lg-4">
+								<div class="d-flex">
+									<div class="inputWrapper">
+										<label>in english</label><br>
+										<input class="form-input w-100" id="texteng" type="text" placeholder="eng" value="">
+										<!-- <label>Имя</label> -->
+									</div>
+								</div>
 							</div>
+
+							<div class="col-lg-4">
+								<div class="d-flex">
+									<div class="inputWrapper">
+										<label>по русски</label><br>
+										<input class="form-input w-100" id="textrus" type="text" placeholder="рус" value="">
+										<!-- <label>Имя</label> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="d-flex">
+									<div class="inputWrapper">
+										<label>украиїнською</label><br>
+										<input class="form-input w-100" id="textukr" type="text" placeholder="укр" value="">
+										<!-- <label>Имя</label> -->
+									</div>
+								</div>
+							</div>
+
 						</div>
+
 					</div>
 
-					<div class="col-lg-3 mb-2">
-						<h6>&nbsp;</h6>
-						<div class="d-flex">
-							<div class="inputWrapper">
-								<label>по русски</label><br>
-								<input class="form-input w-100" id="textrus" type="text" placeholder="рус" value=""><br>
-								<!-- <label>Имя</label> -->
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 mb-2">
-						<h6>&nbsp;</h6>
-						<div class="d-flex">
-							<div class="inputWrapper">
-								<label>украиїнською</label><br>
-								<input class="form-input w-100" id="textukr" type="text" placeholder="укр" value=""><br>
-								<!-- <label>Имя</label> -->
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 mb-2">
+					<div class="col-lg-3 mb-3">
 						<h6>Выберите дату рождения:</h6>
-						<div class="d-flex">
-							<div class="inputWrapper">
-									<label>День</label><br>
-									<input class="form-input" id="birthdate" type="number" min="1" max="31" step="1" value="1">
+						<div class="row g-1">
+							<div class="col-4">
+								<div class="inputWrapper">
+										<label>День</label><br>
+										<input class="form-input" id="birthdate" type="number" min="1" max="31" step="1" value="1">
+								</div>
 							</div>
-							<div class="inputWrapper">
-									<label>Месяц</label><br>
-									<input class="form-input" id="birthmonth" type="number" min="1" max="12" step="1" value="1">
+							<div class="col-4">
+								<div class="inputWrapper">
+										<label>Месяц</label><br>
+										<input class="form-input" id="birthmonth" type="number" min="1" max="12" step="1" value="1">
+								</div>
 							</div>
-							<div class="inputWrapper">
-								<label>Год</label><br>
-								<input class="form-input" id="birthyear" type="number" min="0" step="1" value="2000">
+							<div class="col-4">
+								<div class="inputWrapper">
+									<label>Год</label><br>
+									<input class="form-input" id="birthyear" type="number" min="0" step="1" value="2000">
+								</div>
 							</div>
-
 						</div>
 
 					</div>
 
-					<div class="col-lg-6 text-center offset-lg-3">
+					<div class="col-lg-6 text-center offset-lg-3 mt-4">
 						<button class="calculate " onclick="parseinputs()">Рассчитать
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.47998 20.3137L14.9325 11.9999L6.47998 3.68606L7.78534 2.3999L17.52 12.0047L7.78534 21.5999L6.47998 20.3137Z" fill="black"/> </svg>
 						</button>
@@ -108,7 +119,7 @@
 			<section id="alphabets">
 				<div class="container">
 
-					<h5>ENG</h5>
+					<hr><h5>ENG</h5>
 					<div class="row mb-5">
 						<div class="col-lg-6">
 							<table class="table small table-fixed mb-5">
@@ -127,20 +138,19 @@
 							</table>
 						</div>
 						<div class="col-lg-5 offset-lg-1">
-							<div class="row">
-								<div class="col-9">
+							<div class="row mb-3">
+								<div class="col-6">
 									<div class="h5">Результат <span id="ressumeng"></span></div>
-									<div id="result_eng" class="result" >&nbsp;</div>
 								</div>
-								<div class="col-3 text-center">
-									<div class="h5">Совпадений</div>
-									<div id="intersection_eng" class="intersection">&nbsp;</div>
+								<div class="col-6">
+									<div class="h5">Совпадений <span id="intersection_eng" class="intersection">&nbsp;</span></div>
 								</div>
 							</div>
+							<div id="result_eng" class="result" >&nbsp;</div>
 						</div>
 					</div>
 
-					<h5>РУС</h5>
+					<hr><h5>РУС</h5>
 					<div class="row mb-5">
 						<div class="col-lg-6">
 							<table class="table small table-fixed mb-5">
@@ -159,20 +169,19 @@
 							</table>
 						</div>
 						<div class="col-lg-5 offset-lg-1">
-							<div class="row">
-								<div class="col-9">
+							<div class="row mb-3">
+								<div class="col-6">
 									<div class="h5">Результат <span id="ressumrus"></span></div>
-									<div id="result_rus" class="result" >&nbsp;</div>
 								</div>
-								<div class="col-3 text-center">
-									<div class="h5">Совпадений</div>
-									<div id="intersection_rus" class="intersection">&nbsp;</div>
+								<div class="col-6">
+									<div class="h5">Совпадений <span id="intersection_rus" class="intersection">&nbsp;</span></div>
 								</div>
 							</div>
+							<div id="result_rus" class="result" >&nbsp;</div>
 						</div>
 					</div>
 
-					<h5>УКР</h5>
+					<hr><h5>УКР</h5>
 					<div class="row mb-5">
 						<div class="col-lg-6">
 							<table class="table small table-fixed mb-5">
@@ -191,16 +200,15 @@
 							</table>
 						</div>
 						<div class="col-lg-5 offset-lg-1">
-							<div class="row">
-								<div class="col-9">
+							<div class="row mb-3">
+								<div class="col-6">
 									<div class="h5">Результат <span id="ressumukr"></span></div>
-									<div id="result_ukr" class="result" >&nbsp;</div>
 								</div>
-								<div class="col-3 text-center">
-									<div class="h5">Совпадений</div>
-									<div id="intersection_ukr" class="intersection">&nbsp;</div>
+								<div class="col-6">
+									<div class="h5">Совпадений <span id="intersection_ukr" class="intersection">&nbsp;</span></div>
 								</div>
 							</div>
+							<div id="result_ukr" class="result" >&nbsp;</div>
 						</div>
 					</div>
 
