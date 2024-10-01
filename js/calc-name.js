@@ -81,7 +81,7 @@ function parseinputs() {
 		while ( ressumeng > 22 ) { ressumeng = ressumeng - 22 };
 		document.getElementById('ressumeng').innerHTML = ressumeng;
 
-		ressumengHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumeng]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumeng)+'</div></div>';
+		ressumengHTML = '<div class="tcard shineme" id="reng01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rengr01">∑</div><div><img id="rengi01" src="'+pimg[ressumeng]+'" class="cimg"></div><div class="rstring" id="rengs01">'+convertToRoman(ressumeng)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultengRoman = [];
@@ -89,7 +89,7 @@ function parseinputs() {
 		for (var jeng = 0; jeng < (resulteng.length); jeng++) {
 			if (arrayeng[jeng] == ' ') {arrayeng[jeng] = '&nbsp;'};
 			resultengRoman[jeng] = convertToRoman(resulteng[jeng]);
-			resultengHTML[jeng] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jeng+1)+'</div><div class="romulus" id="rr01">'+arrayeng[jeng]+'</div><div><img id="ri01" src="'+pimg[resulteng[jeng]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultengRoman[jeng]+'</div></div>';
+			resultengHTML[jeng] = '<div class="tcard shineme" id="reng01"><div class="ordernumber">'+(jeng+1)+'</div><div class="romulus" id="rengr01">'+arrayeng[jeng]+'</div><div><img id="rengi01" src="'+pimg[resulteng[jeng]]+'" class="cimg"></div><div class="rstring" id="rengs01">'+resultengRoman[jeng]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку
@@ -148,7 +148,7 @@ function parseinputs() {
 		while ( ressumrus > 22 ) { ressumrus = ressumrus - 22 };
 		document.getElementById('ressumrus').innerHTML = ressumrus;
 
-		ressumrusHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumrus]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumrus)+'</div></div>';
+		ressumrusHTML = '<div class="tcard shineme" id="rrus01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rrusr01">∑</div><div><img id="rrusi01" src="'+pimg[ressumrus]+'" class="cimg"></div><div class="rstring" id="rruss01">'+convertToRoman(ressumrus)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultrusRoman = [];
@@ -156,7 +156,7 @@ function parseinputs() {
 		for (var jrus = 0; jrus < (resultrus.length); jrus++) {
 			if (arrayrus[jrus] == ' ') {arrayrus[jrus] = '&nbsp;'};
 			resultrusRoman[jrus] = convertToRoman(resultrus[jrus]);
-			resultrusHTML[jrus] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jrus+1)+'</div><div class="romulus" id="rr01">'+arrayrus[jrus]+'</div><div><img id="ri01" src="'+pimg[resultrus[jrus]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultrusRoman[jrus]+'</div></div>';
+			resultrusHTML[jrus] = '<div class="tcard shineme" id="rrus01"><div class="ordernumber">'+(jrus+1)+'</div><div class="romulus" id="rrusr01">'+arrayrus[jrus]+'</div><div><img id="rrusi01" src="'+pimg[resultrus[jrus]]+'" class="cimg"></div><div class="rstring" id="rruss01">'+resultrusRoman[jrus]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку
@@ -214,7 +214,7 @@ function parseinputs() {
 		while ( ressumukr > 22 ) { ressumukr = ressumukr - 22 };
 		document.getElementById('ressumukr').innerHTML = ressumukr;
 
-		ressumukrHTML = '<div class="tcard shineme" id="r01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rr01">∑</div><div><img id="ri01" src="'+pimg[ressumukr]+'" class="cimg"></div><div class="rstring" id="rs01">'+convertToRoman(ressumukr)+'</div></div>';
+		ressumukrHTML = '<div class="tcard shineme" id="rukr01"><div class="ordernumber">&nbsp;</div><div class="romulus" id="rukrr01">∑</div><div><img id="rukri01" src="'+pimg[ressumukr]+'" class="cimg"></div><div class="rstring" id="rukrs01">'+convertToRoman(ressumukr)+'</div></div>';
 
 		// проходимся циклом по результатам
 		resultukrRoman = [];
@@ -222,7 +222,7 @@ function parseinputs() {
 		for (var jukr = 0; jukr < (resultukr.length); jukr++) {
 			if (arrayukr[jukr] == ' ') {arrayukr[jukr] = '&nbsp;'};
 			resultukrRoman[jukr] = convertToRoman(resultukr[jukr]);
-			resultukrHTML[jukr] = '<div class="tcard shineme" id="r01"><div class="ordernumber">'+(jukr+1)+'</div><div class="romulus" id="rr01">'+arrayukr[jukr]+'</div><div><img id="ri01" src="'+pimg[resultukr[jukr]]+'" class="cimg"></div><div class="rstring" id="rs01">'+resultukrRoman[jukr]+'</div></div>';
+			resultukrHTML[jukr] = '<div class="tcard shineme" id="rukr01"><div class="ordernumber">'+(jukr+1)+'</div><div class="romulus" id="rukrr01">'+arrayukr[jukr]+'</div><div><img id="rukri01" src="'+pimg[resultukr[jukr]]+'" class="cimg"></div><div class="rstring" id="rukrs01">'+resultukrRoman[jukr]+'</div></div>';
 		};
 
 		// Преобразуем массив в строку
@@ -323,6 +323,56 @@ function parseinputs() {
 		if ( result[15] == 0 ) { result[15] = 22 };
 		while ( result[15] > 22 ) { result[15] = result[15] - 22 };
 
+
+		// Выводим результат на экран
+		document.getElementById('rr01').textContent = convertToRoman(result[1]);
+			document.getElementById('rs01').textContent = convertToSub(result[1]);
+			document.getElementById('ri01').src = pimg[result[1]];
+		document.getElementById('rr02').textContent = convertToRoman(result[2]);
+			document.getElementById('rs02').textContent = convertToSub(result[2]);
+			document.getElementById('ri02').src = pimg[result[2]];
+		document.getElementById('rr03').textContent = convertToRoman(result[3]);
+			document.getElementById('rs03').textContent = convertToSub(result[3]);
+			document.getElementById('ri03').src = pimg[result[3]];
+		document.getElementById('rr04').textContent = convertToRoman(result[4]);
+			document.getElementById('rs04').textContent = convertToSub(result[4]);
+			document.getElementById('ri04').src = pimg[result[4]];
+		document.getElementById('rr05').textContent = convertToRoman(result[5]);
+			document.getElementById('rs05').textContent = convertToSub(result[5]);
+			document.getElementById('ri05').src = pimg[result[5]];
+		document.getElementById('rr06').textContent = convertToRoman(result[6]);
+			document.getElementById('rs06').textContent = convertToSub(result[6]);
+			document.getElementById('ri06').src = pimg[result[6]];
+		document.getElementById('rr07').textContent = convertToRoman(result[7]);
+			document.getElementById('rs07').textContent = convertToSub(result[7]);
+			document.getElementById('ri07').src = pimg[result[7]];
+		document.getElementById('rr08').textContent = convertToRoman(result[8]);
+			document.getElementById('rs08').textContent = convertToSub(result[8]);
+			document.getElementById('ri08').src = pimg[result[8]];
+		document.getElementById('rr09').textContent = convertToRoman(result[9]);
+			document.getElementById('rs09').textContent = convertToSub(result[9]);
+			document.getElementById('ri09').src = pimg[result[9]];
+		document.getElementById('rr10').textContent = convertToRoman(result[10]);
+			document.getElementById('rs10').textContent = convertToSub(result[10]);
+			document.getElementById('ri10').src = pimg[result[10]];
+		document.getElementById('rr11').textContent = convertToRoman(result[11]);
+			document.getElementById('rs11').textContent = convertToSub(result[11]);
+			document.getElementById('ri11').src = pimg[result[11]];
+		document.getElementById('rr12').textContent = convertToRoman(result[12]);
+			document.getElementById('rs12').textContent = convertToSub(result[12]);
+			document.getElementById('ri12').src = pimg[result[12]];
+		document.getElementById('rr13').textContent = convertToRoman(result[13]);
+			document.getElementById('rs13').textContent = convertToSub(result[13]);
+			document.getElementById('ri13').src = pimg[result[13]];
+		document.getElementById('rr14').textContent = convertToRoman(result[14]);
+			document.getElementById('rs14').textContent = convertToSub(result[14]);
+			document.getElementById('ri14').src = pimg[result[14]];
+		document.getElementById('rr15').textContent = convertToRoman(result[15]);
+			document.getElementById('rs15').textContent = convertToSub(result[15]);
+			document.getElementById('ri15').src = pimg[result[15]];
+
+
+
 		// Преобразуем массив в строку
 		const result_intersect = result.join(' ');
 
@@ -399,4 +449,43 @@ function convertToSub(card) {
 	return SubNumerals[card];
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+
+	document.getElementById('btnradio1').addEventListener('click', function() {
+		document.getElementById('r01').classList.toggle('axisyellow');
+		document.getElementById('r06').classList.toggle('axisyellow');
+		document.getElementById('r08').classList.toggle('axisyellow');
+		document.getElementById('r10').classList.toggle('axisyellow');
+	});
+
+	document.getElementById('btnradio2').addEventListener('click', function() {
+		document.getElementById('r02').classList.toggle('axisblue');
+		document.getElementById('r05').classList.toggle('axisblue');
+		document.getElementById('r09').classList.toggle('axisblue');
+		document.getElementById('r12').classList.toggle('axisblue');
+	});
+
+	document.getElementById('btnradio3').addEventListener('click', function() {
+		document.getElementById('r03').classList.toggle('axisgreen');
+		document.getElementById('r04').classList.toggle('axisgreen');
+		document.getElementById('r07').classList.toggle('axisgreen');
+		document.getElementById('r11').classList.toggle('axisgreen');
+	});
+
+	document.getElementById('btnradio4').addEventListener('click', function() {
+		document.getElementById('r01').classList.toggle('axisviolet');
+		document.getElementById('r02').classList.toggle('axisviolet');
+		document.getElementById('r03').classList.toggle('axisviolet');
+		document.getElementById('r04').classList.toggle('axisviolet');
+		document.getElementById('r05').classList.toggle('axisviolet');
+		document.getElementById('r06').classList.toggle('axisviolet');
+	});
+
+	document.getElementById('btnradio5').addEventListener('click', function() {
+		document.getElementById('r13').classList.toggle('d-none');
+		document.getElementById('r14').classList.toggle('d-none');
+		document.getElementById('r15').classList.toggle('d-none');
+	});
+
+});
 

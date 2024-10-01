@@ -55,6 +55,14 @@ section {
   margin-top: 60px;
 }
 
+footer {
+  background-color: #2e1116;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 #dainput {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -195,8 +203,116 @@ section {
   border-radius: 2px;
 }
 
+#level_01 .tcard#r01 {
+  left: 175px;
+  top: 260px;
+}
+#level_01 .tcard#r02 {
+  left: 330px;
+  top: 175px;
+}
+#level_01 .tcard#r03 {
+  left: 485px;
+  top: 260px;
+}
+#level_01 .tcard#r04 {
+  left: 175px;
+  top: 420px;
+}
+#level_01 .tcard#r05 {
+  left: 330px;
+  top: 515px;
+}
+#level_01 .tcard#r06 {
+  left: 485px;
+  top: 420px;
+}
+#level_01 .tcard#r07 {
+  left: 15px;
+  top: 510px;
+}
+#level_01 .tcard#r08 {
+  left: 625px;
+  top: 510px;
+}
+#level_01 .tcard#r09 {
+  left: 330px;
+  top: 670px;
+}
+#level_01 .tcard#r10 {
+  left: 15px;
+  top: 145px;
+}
+#level_01 .tcard#r11 {
+  left: 625px;
+  top: 145px;
+}
+#level_01 .tcard#r12 {
+  left: 330px;
+  top: 15px;
+}
+#level_01 .tcard#r13 {
+  left: 250px;
+  top: 210px;
+}
+#level_01 .tcard#r14 {
+  left: 410px;
+  top: 210px;
+}
+#level_01 .tcard#r15 {
+  left: 330px;
+  top: 340px;
+}
+
+.tcard.axisyellow {
+  box-shadow: 0 0 0 5px #cccc00;
+}
+.tcard.axisgreen {
+  box-shadow: 0 0 0 5px #0a8d64;
+}
+.tcard.axisblue {
+  box-shadow: 0 0 0 5px #054f95;
+}
+.tcard.axisviolet {
+  box-shadow: 0 0 0 5px #cb00b5;
+}
+
 .results {
   margin-top: 300px;
+}
+
+.btn_filter {
+  margin-bottom: 20px;
+  color: #C7AB77;
+}
+.btn_filter input[type=checkbox]:checked + label {
+  color: #fff;
+  border: none;
+  border-bottom: 1px dashed #fff;
+}
+.btn_filter .axis {
+  color: #C7AB77;
+  border-radius: 0 !important;
+  margin-right: 15px;
+  border-bottom: 1px dashed transparent;
+}
+.btn_filter .axis:hover {
+  color: #fff;
+  border-bottom: 1px dashed #C7AB77;
+}
+.btn_filter .btn-check {
+  outline: none;
+  border: none !important;
+}
+
+.tname {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #743944;
+  border: 1px solid #C7AB77;
+  border-radius: 15px;
+  margin-right: 5px;
+  color: #fff;
 }
 
 @media (max-width: 767px) {

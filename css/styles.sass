@@ -56,6 +56,13 @@ main
 section
 	margin-top: 60px
 
+footer
+	background-color: #2e1116
+	padding-top: 40px
+	padding-bottom: 40px
+	font-size: 13px
+	color: #fff9
+
 #dainput
 	padding-top: 60px
 	padding-bottom: 60px
@@ -179,8 +186,115 @@ section
 		height: 65px
 		border-radius: 2px
 
+#level_01 .tcard
+	&#r01
+		left: 175px
+		top: 260px
+
+	&#r02
+		left: 330px
+		top: 175px
+
+	&#r03
+		left: 485px
+		top: 260px
+
+	&#r04
+		left: 175px
+		top: 420px
+
+	&#r05
+		left: 330px
+		top: 515px
+
+	&#r06
+		left: 485px
+		top: 420px
+
+	&#r07
+		left: 15px
+		top: 510px
+
+	&#r08
+		left: 625px
+		top: 510px
+
+	&#r09
+		left: 330px
+		top: 670px
+
+	&#r10
+		left: 15px
+		top: 145px
+
+	&#r11
+		left: 625px
+		top: 145px
+
+	&#r12
+		left: 330px
+		top: 15px
+
+	&#r13
+		left: 250px
+		top: 210px
+
+	&#r14
+		left: 410px
+		top: 210px
+
+	&#r15
+		left: 330px
+		top: 340px
+
+.tcard
+	&.axisyellow
+		box-shadow: 0 0 0 5px #cccc00
+
+	&.axisgreen
+		box-shadow: 0 0 0 5px #0a8d64
+
+	&.axisblue
+		box-shadow: 0 0 0 5px #054f95
+
+	&.axisviolet
+		box-shadow: 0 0 0 5px #cb00b5
+
+
+
 .results
 	margin-top: 300px
+
+.btn_filter
+	margin-bottom: 20px
+	color: $c1
+	input[type="checkbox"]:checked+label
+		color: #fff
+		border: none
+		border-bottom: 1px dashed #fff
+	.axis
+		color: $c1
+		border-radius: 0 !important
+		margin-right: 15px
+		border-bottom: 1px dashed transparent
+
+		&:hover
+			color: #fff
+			border-bottom: 1px dashed $c1
+	.btn-check
+		outline: none
+		border: none !important
+
+.tname
+	font-size: 18px
+	padding: 10px 15px
+	background-color: #743944
+	border: 1px solid #C7AB77
+	border-radius: 15px
+	margin-right: 5px
+	color: #fff
+
+
 
 @media (max-width: 767px)
 	#dainput
